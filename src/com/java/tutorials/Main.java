@@ -1,5 +1,7 @@
 package com.java.tutorials;
 
+import com.java.tutorials.tests.MathTest;
+import com.java.tutorials.tests.MemoryTest;
 import com.java.tutorials.tests.NumericTest;
 
 public class Main {
@@ -8,9 +10,12 @@ public class Main {
         NumericTest numericTest = new NumericTest();
         //        numericTest.testingPrimitives();
         //        numericTest.testingHelperClasses();
-        numericTest.testBigDecimal();
+//        numericTest.testBigDecimal();
 
-//        MemoryTest memoryTest = new MemoryTest();
+        MemoryTest memoryTest = new MemoryTest();
 //        memoryTest.testRuntimeMemory();
+
+        MathTest mathTest = new MathTest();
+        mathTest.testMathClass();
     }
 }
