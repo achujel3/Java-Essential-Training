@@ -1,5 +1,7 @@
 package com.java.tutorials.tests;
 
+import java.math.BigDecimal;
+
 public class NumericTest {
 
 
@@ -33,6 +35,21 @@ public class NumericTest {
         Integer max = Integer.MAX_VALUE;
         max++;
         System.out.println(max);
+
+    }
+
+    public void testBigDecimal(){
+
+        double value = .012;
+        double pSum = value + value + value;
+        // Wrong sum:
+        System.out.println("Sum: " + pSum);
+
+        String strValue = Double.toString(value);
+        BigDecimal bigValue = new BigDecimal(strValue);
+        BigDecimal bSum = bigValue.add(bigValue).add(bigValue);
+        // Correct sum:
+        System.out.println("Sum: " + bSum);
 
     }
 
