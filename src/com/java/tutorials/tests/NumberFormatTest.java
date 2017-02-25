@@ -25,7 +25,7 @@ public class NumberFormatTest {
 
     public void testLocale(){
 
-        Locale locale = new Locale("da", "DK");
+        Locale locale = new Locale("en", "GB");
 
         double doubleValue = 1_234_567.89;
 
