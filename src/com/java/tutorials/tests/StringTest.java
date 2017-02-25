@@ -47,4 +47,12 @@ public class StringTest {
 
     }
 
+    public void matching(boolean bool){
+        if(bool){
+            System.out.println("They match");
+        } else {
+            System.out.println("They don't match");
+        }
+    }
+
 }
