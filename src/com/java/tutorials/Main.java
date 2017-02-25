@@ -24,5 +24,7 @@ public class Main {
 //        char[] arrayOfType = {'S', 'o', 'm', 'e', ' ', 't', 'y', 'p', 'e'};
 //        stringTest.type = stringTest.getStringFromArrayOfChars(arrayOfType);
 //        stringTest.displayType();
+
+        System.out.println("Some text");
     }
 }
