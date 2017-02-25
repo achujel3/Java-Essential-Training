@@ -1,7 +1,5 @@
 package com.java.tutorials;
 
-import com.java.tutorials.tests.StringTest;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -21,9 +19,10 @@ public class Main {
 
 //        CharTest charTest = new CharTest();
 //        charTest.testChar();
-        StringTest stringTest = new StringTest();
-        char[] arrayOfType = {'S', 'o', 'm', 'e', ' ', 't', 'y', 'p', 'e'};
-        stringTest.type = stringTest.getStringFromArrayOfChars(arrayOfType);
-        stringTest.displayType();
+
+//        StringTest stringTest = new StringTest();
+//        char[] arrayOfType = {'S', 'o', 'm', 'e', ' ', 't', 'y', 'p', 'e'};
+//        stringTest.type = stringTest.getStringFromArrayOfChars(arrayOfType);
+//        stringTest.displayType();
     }
 }

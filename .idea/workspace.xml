@@ -19,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/java/tutorials/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="75" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+              <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -39,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StringTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/java/tutorials/tests/StringTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -165,8 +165,8 @@
         <option value="$PROJECT_DIR$/src/com/java/tutorials/tests/MathTest.java" />
         <option value="$PROJECT_DIR$/src/com/java/tutorials/tests/BooleanTest.java" />
         <option value="$PROJECT_DIR$/src/com/java/tutorials/tests/CharTest.java" />
-        <option value="$PROJECT_DIR$/src/com/java/tutorials/Main.java" />
         <option value="$PROJECT_DIR$/src/com/java/tutorials/tests/StringTest.java" />
+        <option value="$PROJECT_DIR$/src/com/java/tutorials/Main.java" />
       </list>
     </option>
   </component>
@@ -672,12 +672,12 @@
       <workItem from="1487971670564" duration="100000" />
       <workItem from="1487971809332" duration="2160000" />
       <workItem from="1487980715614" duration="1102000" />
-      <workItem from="1488041571920" duration="3317000" />
+      <workItem from="1488041571920" duration="3709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27273000" />
+    <option name="totallyTimeSpent" value="27665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1124,14 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/java/tutorials/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="75" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/java/tutorials/tests/StringTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1142,6 +1134,14 @@
             <element signature="e#179#180#0" expanded="true" />
             <element signature="e#242#243#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/java/tutorials/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
