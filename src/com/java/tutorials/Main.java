@@ -22,7 +22,8 @@ public class Main {
 //        CharTest charTest = new CharTest();
 //        charTest.testChar();
         StringTest stringTest = new StringTest();
-        stringTest.type = "Some type";
+        char[] arrayOfType = {'S', 'o', 'm', 'e', ' ', 't', 'y', 'p', 'e'};
+        stringTest.type = stringTest.getStringFromArrayOfChars(arrayOfType);
         stringTest.displayType();
     }
 }

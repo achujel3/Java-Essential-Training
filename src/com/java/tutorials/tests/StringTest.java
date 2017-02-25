@@ -12,4 +12,10 @@ public class StringTest {
         System.out.println("The type is: " + this.type);
     }
 
+    public String getStringFromArrayOfChars(char[] chars){
+        // This wouldn't work and return pointer
+//        return chars.toString();
+        return new String(chars);
+    }
+
 }
