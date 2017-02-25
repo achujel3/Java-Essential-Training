@@ -1,6 +1,6 @@
 package com.java.tutorials;
 
-import com.java.tutorials.tests.CharTest;
+import com.java.tutorials.tests.StringTest;
 
 public class Main {
 
@@ -19,7 +19,10 @@ public class Main {
 //        BooleanTest booleanTest = new BooleanTest();
 //        booleanTest.testBooleanValues();
 
-        CharTest charTest = new CharTest();
-        charTest.testChar();
+//        CharTest charTest = new CharTest();
+//        charTest.testChar();
+        StringTest stringTest = new StringTest();
+        stringTest.type = "Some type";
+        stringTest.displayType();
     }
 }
