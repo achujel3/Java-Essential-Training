@@ -25,6 +25,6 @@ public class Main {
 //        stringTest.type = stringTest.getStringFromArrayOfChars(arrayOfType);
 //        stringTest.displayType();
 
-        System.out.println("Some text");
+        System.out.println("Some text to test .gitignore again");
     }
 }
