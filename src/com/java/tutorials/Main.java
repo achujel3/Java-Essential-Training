@@ -1,5 +1,7 @@
 package com.java.tutorials;
 
+import com.java.tutorials.tests.NumberFormatTest;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -25,6 +27,8 @@ public class Main {
 //        stringTest.type = stringTest.getStringFromArrayOfChars(arrayOfType);
 //        stringTest.displayType();
 
-        System.out.println("Some text to test .gitignore again");
+        NumberFormatTest numberFormatTest = new NumberFormatTest();
+        numberFormatTest.testNumberFormat();
+
     }
 }
