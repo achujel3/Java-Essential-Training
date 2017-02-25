@@ -1,5 +1,6 @@
 package com.java.tutorials;
 
+import com.java.tutorials.tests.BooleanTest;
 import com.java.tutorials.tests.MathTest;
 import com.java.tutorials.tests.MemoryTest;
 import com.java.tutorials.tests.NumericTest;
@@ -16,6 +17,9 @@ public class Main {
 //        memoryTest.testRuntimeMemory();
 
         MathTest mathTest = new MathTest();
-        mathTest.testMathClass();
+//        mathTest.testMathClass();
+
+        BooleanTest booleanTest = new BooleanTest();
+        booleanTest.testBooleanValues();
     }
 }
