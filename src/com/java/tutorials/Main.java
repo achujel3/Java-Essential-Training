@@ -1,34 +1,14 @@
 package com.java.tutorials;
 
-import com.java.tutorials.tests.NumberFormatTest;
+import com.java.tutorials.tests.StringTest;
 
 public class Main {
 
     public static void main(String[] args) {
-//        NumericTest numericTest = new NumericTest();
-//        numericTest.testingPrimitives();
-//        numericTest.testingHelperClasses();
-//        numericTest.testBigDecimal();
 
-//        MemoryTest memoryTest = new MemoryTest();
-//        memoryTest.testRuntimeMemory();
+        StringTest stringTest = new StringTest();
+        stringTest.testingStringBuilder();
 
-//        MathTest mathTest = new MathTest();
-//        mathTest.testMathClass();
-
-//        BooleanTest booleanTest = new BooleanTest();
-//        booleanTest.testBooleanValues();
-
-//        CharTest charTest = new CharTest();
-//        charTest.testChar();
-
-//        StringTest stringTest = new StringTest();
-//        char[] arrayOfType = {'S', 'o', 'm', 'e', ' ', 't', 'y', 'p', 'e'};
-//        stringTest.type = stringTest.getStringFromArrayOfChars(arrayOfType);
-//        stringTest.displayType();
-
-        NumberFormatTest numberFormatTest = new NumberFormatTest();
-        numberFormatTest.testNumberFormat();
 
     }
 }
