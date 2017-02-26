@@ -15,6 +15,11 @@ public class TryCatchTest {
         String input = scanner.next();
         while (!input.equals("0")) {
             try {
+
+                if(Integer.valueOf(input) < welcome.length()){
+                    throw (new Exception("chars.length is less than " + welcome.length()));
+                }
+
                 char lastChar = chars[Integer.valueOf(input)];
                 System.out.println(lastChar);
 
@@ -24,6 +29,8 @@ public class TryCatchTest {
                 System.out.println("Array index out of bound");
             } catch (StringIndexOutOfBoundsException e) {
                 System.out.println("String index out of bound");
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
             input = scanner.next();
         }
