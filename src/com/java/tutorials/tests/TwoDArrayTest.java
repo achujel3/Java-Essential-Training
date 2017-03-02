@@ -13,7 +13,7 @@ public class TwoDArrayTest {
         capitals[2][1] = "Tallinn";
 
         for (int i = 0; i < capitals.length; i++) {
-            
+
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append("The capital of ")
                     .append(capitals[i][0])
