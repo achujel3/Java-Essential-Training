@@ -4,13 +4,21 @@ import java.util.Scanner;
 
 public class Calculator2 {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        String firstNumber = getInput("Write first number: ");
-        String secondNumber = getInput("Write second number: ");
-        String action = getInput("What action you want to do ( + - * /): ");
+        Calculator2 calculator2 = new Calculator2();
+        calculator2.calculate();
 
-        while(!firstNumber.equals("0") || !secondNumber.equals("0") || !action.equals("0")){
+    }
+
+    public void calculate() {
+
+        InputHelper inputHelper = new InputHelper();
+        String firstNumber = inputHelper.getInput("Write first number: ");
+        String secondNumber = inputHelper.getInput("Write second number: ");
+        String action = inputHelper.getInput("What action you want to do ( + - * /): ");
+
+        while (!firstNumber.equals("0") || !secondNumber.equals("0") || !action.equals("0")) {
             try {
                 switch (action) {
                     case "+":
@@ -32,18 +40,20 @@ public class Calculator2 {
                 System.out.println("You've entered not a number!");
             }
 
-            firstNumber = getInput("Write first number: ");
-            secondNumber = getInput("Write second number: ");
-            action = getInput("What action you want to do ( + - * /): ");
+            firstNumber = inputHelper.getInput("Write first number: ");
+            secondNumber = inputHelper.getInput("Write second number: ");
+            action = inputHelper.getInput("What action you want to do ( + - * /): ");
 
         }
-
     }
 
-    public static String getInput(String prompt){
-        System.out.println(prompt);
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+
+    class InputHelper {
+        public String getInput(String prompt) {
+            System.out.println(prompt);
+            Scanner scanner = new Scanner(System.in);
+            return scanner.nextLine();
+        }
     }
 
 
