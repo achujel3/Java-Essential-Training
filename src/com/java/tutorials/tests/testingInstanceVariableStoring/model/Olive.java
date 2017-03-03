@@ -2,7 +2,10 @@ package com.java.tutorials.tests.testingInstanceVariableStoring.model;
 
 public class Olive {
 
-    private String name = "Kalamata";
+    public static final String KALAMATA = "Kalamata";
+    public static final String LIGURIAN = "Ligurian";
+
+    private String name = KALAMATA;
     private long color = 0x2E0854;
     private int oil = 3;
 
