@@ -2,16 +2,14 @@ package com.java.tutorials.tests.testingInstanceVariableStoring.model;
 
 public class Olive {
 
-    public static final String KALAMATA = "Kalamata";
-    public static final String LIGURIAN = "Ligurian";
 
-    private String name = KALAMATA;
+    private OliveName name = OliveName.KALAMATA;
     private long color = 0x2E0854;
     private int oil = 3;
 
     public Olive(){}
 
-    public Olive(String name, long color, int oil){
+    public Olive(OliveName name, long color, int oil){
         this.name = name;
         this.color = color;
         this.oil = oil;
@@ -34,12 +32,12 @@ public class Olive {
         this.oil = oil;
     }
 
-    public String getName() {
+    public OliveName getName() {
 
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(OliveName name) {
         this.name = name;
     }
 }
