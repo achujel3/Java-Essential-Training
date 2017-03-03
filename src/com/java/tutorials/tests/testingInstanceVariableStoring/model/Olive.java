@@ -6,6 +6,14 @@ public class Olive {
     private long color = 0x2E0854;
     private int oil = 3;
 
+    public Olive(){}
+
+    public Olive(String name, long color, int oil){
+        this.name = name;
+        this.color = color;
+        this.oil = oil;
+    }
+
     public long getColor() {
         return color;
     }
