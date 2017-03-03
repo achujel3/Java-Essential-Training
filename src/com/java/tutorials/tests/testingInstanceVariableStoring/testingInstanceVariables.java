@@ -13,12 +13,15 @@ public class testingInstanceVariables {
         Olive olive1 = new Olive();
         olives.add(olive1);
         Olive olive2 = new Olive();
+        olive2.setOil(1);
         olives.add(olive2);
         Olive olive3 = new Olive();
+        olive3.setOil(4);
         olives.add(olive3);
 
         OlivePress olivePress = new OlivePress();
-        olivePress.getOil(olives);
+        int totalOil = olivePress.getOil(olives);
+        System.out.println("Total olive oil: " + totalOil);
 
     }
 
