@@ -6,4 +6,9 @@ public class Kalamata extends Olive {
         super(OliveName.KALAMATA, OliveColor.BLACK, 2);
     }
 
+    @Override
+    public String getOrigin() {
+        return "Greece";
+    }
+
 }

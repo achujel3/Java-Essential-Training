@@ -1,6 +1,6 @@
 package com.java.tutorials.tests.testingInstanceVariableStoring.model;
 
-public class Olive {
+public abstract class Olive {
 
 
     private OliveName name;
@@ -24,7 +24,13 @@ public class Olive {
     }
 
     public int crush() {
-        System.out.println(name + ": " + oil + " units");
+        StringBuilder stringBuilder = new StringBuilder(name.toString())
+                .append(", from ")
+                .append(getOrigin())
+                .append(": ")
+                .append(oil)
+                .append(" units");
+        System.out.println(stringBuilder.toString());
         return oil;
     }
 
@@ -39,5 +45,12 @@ public class Olive {
 
     public void setName(OliveName name) {
         this.name = name;
+    }
+
+    public abstract String getOrigin();
+
+    @Override
+    public String toString() {
+        return name.toString();
     }
 }

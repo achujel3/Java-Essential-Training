@@ -23,7 +23,7 @@ public class testingInstanceVariables {
         olivePress.setOil(25);
         int totalOil = olivePress.getOil(olives);
 
-        System.out.println("Total olive oil: " + totalOil);
+        System.out.println("You got " + totalOil + " units of oil.");
 
     }
 
