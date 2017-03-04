@@ -3,28 +3,28 @@ package com.java.tutorials.tests.testingInstanceVariableStoring.model;
 public class Olive {
 
 
-    private OliveName name = OliveName.KALAMATA;
-    private long color = 0x2E0854;
+    private OliveName name;
+    private OliveColor color;
     private int oil = 3;
 
     public Olive(){}
 
-    public Olive(OliveName name, long color, int oil){
+    public Olive(OliveName name, OliveColor color, int oil){
         this.name = name;
         this.color = color;
         this.oil = oil;
     }
 
-    public long getColor() {
+    public OliveColor getColor() {
         return color;
     }
 
-    public void setColor(long color) {
+    public void setColor(OliveColor color) {
         this.color = color;
     }
 
     public int crush() {
-        System.out.println("Ouch!");
+        System.out.println(name + ": " + oil + " units");
         return oil;
     }
 

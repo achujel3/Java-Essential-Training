@@ -10,7 +10,6 @@ public class OlivePress {
 
         int totalOil = 0;
         for (Olive olive : olives) {
-            System.out.println(olive.getName());
             totalOil += olive.crush();
         }
         return totalOil;
