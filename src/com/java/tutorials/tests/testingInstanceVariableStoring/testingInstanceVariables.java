@@ -18,8 +18,11 @@ public class testingInstanceVariables {
         olives.add(new Ligurian());
         olives.add(new Ligurian());
         olives.add(new Ligurian());
-        OlivePress olivePress = new OlivePress();
+
+        Press olivePress = new OlivePress();
+        olivePress.setOil(25);
         int totalOil = olivePress.getOil(olives);
+
         System.out.println("Total olive oil: " + totalOil);
 
     }
