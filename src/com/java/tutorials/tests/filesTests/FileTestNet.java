@@ -1,5 +1,9 @@
 package com.java.tutorials.tests.filesTests;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.XML;
+
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,6 +13,8 @@ import java.net.URL;
 public class FileTestNet {
 
     private static final String FLOWERS_SEED = "http://services.hanselandpetal.com/feeds/flowers.xml";
+    // for JSON parsing
+    public static int PRETTY_PRINT_INDENT_FACTOR = 4;
 
     public static void main(String[] args) throws IOException {
 
@@ -30,7 +36,10 @@ public class FileTestNet {
                 }
             }
 
-            System.out.println(stringBuilder);
+
+            FileTestNet fileTestNet = new FileTestNet();
+            fileTestNet.parseFromXmlToJson(stringBuilder);
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -40,8 +49,18 @@ public class FileTestNet {
             bufferedInputStream.close();
         }
 
-        
 
+
+    }
+
+    public void parseFromXmlToJson(StringBuilder stringBuilder) {
+        try {
+            JSONObject xmlJSONObj = XML.toJSONObject(stringBuilder.toString());
+            String jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
+            System.out.println(jsonPrettyPrintString);
+        } catch (JSONException je) {
+            System.out.println(je.toString());
+        }
     }
 
 }
