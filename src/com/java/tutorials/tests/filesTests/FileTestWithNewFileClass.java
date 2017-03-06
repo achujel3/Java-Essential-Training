@@ -3,7 +3,7 @@ package com.java.tutorials.tests.filesTests;
 import java.io.IOException;
 import java.nio.file.*;
 
-public class fileTestWithNewFileClass {
+public class FileTestWithNewFileClass {
 
     public static void main(String[] args) {
 
