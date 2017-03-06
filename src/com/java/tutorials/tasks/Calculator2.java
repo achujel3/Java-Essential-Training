@@ -2,6 +2,9 @@ package com.java.tutorials.tasks;
 
 import java.util.Scanner;
 
+/**
+ * This is a second calculator app from the course "Java Essentials"
+ */
 public class Calculator2 {
 
     public static void main(String[] args) {
@@ -11,6 +14,9 @@ public class Calculator2 {
 
     }
 
+    /**
+     * This is a method which is doing calculation
+     */
     public void calculate() {
 
         InputHelper inputHelper = new InputHelper();
